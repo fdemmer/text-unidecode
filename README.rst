@@ -1,13 +1,15 @@
 Text-Unidecode
 ==============
 
-.. image:: https://travis-ci.org/kmike/text-unidecode.svg?branch=master
-    :target: https://travis-ci.org/kmike/text-unidecode
-    :alt: Build Status
+|Build| |Coverage|
 
-text-unidecode is the most basic port of the
-`Text::Unidecode <http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm>`_
-Perl library.
+.. |Build| image:: https://github.com/fdemmer/text-unidecode/workflows/CI/badge.svg?branch=master
+    :target: https://github.com/fdemmer/text-unidecode/actions?workflow=CI
+
+.. |Coverage| image:: https://codecov.io/gh/fdemmer/text-unidecode/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/fdemmer/text-unidecode
+
+text-unidecode is the most basic port of the `Text::Unidecode`__ Perl library.
 
 There are other Python ports of Text::Unidecode (unidecode_
 and isounidecode_). unidecode_ is GPL; isounidecode_ uses too much memory,
@@ -23,6 +25,7 @@ better transliteration quality).
 
 ``text-unidecode`` supports Python 2.7 and 3.4+.
 
+.. __: http://search.cpan.org/~sburke/Text-Unidecode-0.04/lib/Text/Unidecode.pm
 .. _unidecode: https://pypi.python.org/pypi/Unidecode/
 .. _isounidecode: https://pypi.python.org/pypi/isounidecode/
 .. _Artistic License: https://opensource.org/licenses/Artistic-Perl-1.0
@@ -30,14 +33,14 @@ better transliteration quality).
 Installation
 ------------
 
-::
+.. code-block:: shell
 
     pip install text-unidecode
 
 Usage
 -----
 
-::
+.. code-block:: python
 
     >>> from text_unidecode import unidecode
     >>> unidecode(u'какой-то текст')
